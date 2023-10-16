@@ -11,7 +11,7 @@ import Recipes from './components/Recipe';
 import RecipeList from './components/RecipeList';
 import Users from './components/User';
 import Home from  './components/Home';
-import Footer from './components/footer'; 
+import Footer from './components/Footer'; 
 import Contact from './components/Contact';
 import About from './components/About'; 
 import './App.css'; 
