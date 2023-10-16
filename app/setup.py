@@ -4,6 +4,14 @@ from flask_bcrypt import Bcrypt
 from flask_migrate import Migrate
 from flask_restful import Api, Resource
 
+app = Flask(
+    __name__,
+    static_url_path='',
+    static_folder='../client/dist',
+    template_folder='../client'
+)
+
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///culinary_companion.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False

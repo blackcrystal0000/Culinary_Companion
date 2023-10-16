@@ -1,10 +1,11 @@
-from flask import Flask, jsonify, request, abort
+from flask import Flask, jsonify, request, abort, render_template
 from setup import app, db, api
 from models import User, Recipe, Review, Category
 
-@app.route('/') 
-def home():
-    return 'WELCOME TO CULINARY COMPANION'
+@app.route('/')
+@app.route('/<int:id>')
+def index(id=0):
+    return render_template("index.html")
 
 @app.route('/recipes', methods=['GET'])
 def get_recipes():
