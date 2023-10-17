@@ -1,7 +1,4 @@
-[[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
-name = "pypi"
+-i https://pypi.org/simple
 
 [packages]
 flask = "==2.2.5"
