@@ -14,12 +14,12 @@ flask-sqlalchemy = "*"
 sqlalchemy-serializer = "*"
 sqlalchemy = "*"
 alembic = "*"
-bcrypt = "*"
 flask-cors = "*"
 click = "*"
 blinker = "*"
 psycopg2-binary = "*"
 honcho = "*"
+bcrypt = "*"
 
 [dev-packages]
 
