@@ -1,4 +1,4 @@
-from setup import db, bcrypt
+from setup import db
 from datetime import datetime
 
 class Recipe(db.Model):
@@ -36,11 +36,11 @@ class User(db.Model):
     def _repr_(self):
         return '<User {}>'.format(self.email)
 
-    def set_password(self, password):
-        self.password = bcrypt.generate_password_hash(password).decode('utf-8')
+    # def set_password(self, password):
+    #     self.password = bcrypt.generate_password_hash(password).decode('utf-8')
 
-    def check_password(self, password):
-        return bcrypt.check_password_hash(self.password, password)
+    # def check_password(self, password):
+    #     return bcrypt.check_password_hash(self.password, password)
 
 class Review(db.Model):
     id = db.Column(db.Integer, primary_key=True)
