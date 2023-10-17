@@ -20,3 +20,4 @@ mako==1.2.4; python_version >= '3.7'
 markupsafe==2.1.3; python_version >= '3.7'
 packaging==23.2; python_version >= '3.7'
 psycopg2-binary==2.9.9; python_version >= '3.8'
+pip==23.3
