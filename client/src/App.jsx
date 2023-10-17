@@ -26,9 +26,9 @@ function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/recipe-categories">Recipe Categories</Link></li>
-            <li><Link to="/recipes">Recipes</Link></li>
-            <li><Link to="/recipe_list">Recipe List</Link></li>
+            <li><Link to="/clientrecipe-categories">Recipe Categories</Link></li>
+            <li><Link to="/clientrecipes">Recipes</Link></li>
+            <li><Link to="/clientrecipe_list">Recipe List</Link></li>
             <li><Link to="/users">Users</Link></li>
           </ul>
         </nav>
@@ -36,9 +36,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/recipe-categories" element={<RecipeCategories />} />
-        <Route path="/recipes" element={<Recipes />} />
-        <Route path="/recipe_list" element={<RecipeList />} />
+        <Route path="/clientrecipe-categories" element={<RecipeCategories />} />
+        <Route path="/clientrecipes" element={<Recipes />} />
+        <Route path="/clientrecipe_list" element={<RecipeList />} />
         <Route path="/users" element={<Users />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/footer" element={<Footer />} />

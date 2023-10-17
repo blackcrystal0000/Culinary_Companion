@@ -25,3 +25,4 @@ SQLAlchemy==2.0.22
 SQLAlchemy-serializer==1.4.1
 typing_extensions==4.8.0
 Werkzeug==3.0.0
+rustc

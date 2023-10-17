@@ -5,7 +5,7 @@ function Reviews() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/api/reviews') 
+    fetch('/reviews') 
       .then((response) => {
         if (!response.ok) {
           throw Error('Request failed with status: ' + response.status);

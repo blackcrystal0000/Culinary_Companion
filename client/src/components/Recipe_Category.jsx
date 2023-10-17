@@ -5,7 +5,7 @@ function RecipeCategories() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/api//recipe_categories') 
+    fetch('/recipe_categories') 
       .then((response) => {
         if (!response.ok) {
           throw new Error('Request failed with status: ' + response.status);

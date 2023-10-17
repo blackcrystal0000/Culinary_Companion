@@ -5,7 +5,7 @@ function Recipes() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/api//recipes') 
+    fetch('/recipes') 
       .then((response) => {
         if (!response.ok) {
           throw new Error('Request failed with status: ' + response.status);

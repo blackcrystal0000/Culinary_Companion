@@ -5,7 +5,7 @@ function Users() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/api//users') // Replace with your API endpoint
+    fetch('/users') // Replace with your API endpoint
       .then((response) => {
         if (!response.ok) {
           throw new Error('Request failed with status: ' + response.status);
